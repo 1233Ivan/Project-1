@@ -161,6 +161,13 @@ h1{
     font-weight: 600;
 
 }
+h3{
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+    font-size: 42px;      /* Font size for column title */
+    color: #000000;      /* Color for column title */
+}
 .usluge p{
     color: rgb(0, 0, 0);      /* Color for "usluge" title paragraph */
     font-size: 32px;      /* Font size for "usluge" title paragraph */
@@ -190,13 +197,6 @@ h1{
     font-weight: 300;
     line-height: 22px;
     padding: 10px;
-}
-h3{
-    text-align: center;
-    font-weight: 600;
-    margin: 10px 0;
-    font-size: 42px;      /* Font size for column title */
-    color: #000000;      /* Color for column title */
 }
 .usluge-col:hover{
     box-shadow: 0 0 20px 0px rgba(0,0,0,0.4);      /* Shadow behind "usluge" boxes*/
