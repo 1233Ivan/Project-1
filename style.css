@@ -151,20 +151,24 @@ nav .fa{
 /*-------------Sekcija Usluge-------------*/
 
 .usluge{
-    width: 80%;
+    width: 100%;
     margin: auto;
     text-align: center;
     padding-top: 100px;
+    background-color: #53525291;
+    background-position: center;
+    background-size: cover;
+    position: relative;
 }
 h1{
-    font-size: 62px;      /* Font size for "usluge" title */
+    font-size: 65px;      /* Font size for "usluge" title */
     font-weight: 600;
 
 }
 h3{
     text-align: center;
     font-weight: 600;
-    margin: 10px 0;
+    margin: 32px 0;
     font-size: 42px;      /* Font size for column title */
     color: #000000;      /* Color for column title */
 }
@@ -183,10 +187,12 @@ h3{
     justify-content: space-between;
 }
 .usluge-col{
+    margin: auto;
+    width: 75%;
     flex-basis: 31%;
-    background: #dbd3d3;      /* Color for "usluge" boxes */
+    background: #4b4b4b6e;      /* Color for "usluge" boxes */
     border-radius: 10px;
-    margin-bottom: 5%;
+    margin-bottom: 10%;
     padding: 20px 12px;
     box-sizing: border-box;
     transition: 0.5s;      /* Shadow transition for "usluge" boxes */
@@ -206,6 +212,10 @@ h3{
 
 @media(max-width: 1000px){
     .row{
-        flex-direction: column;;
+        flex-direction: column;      /* Usluga boxes column */
     }
+
+h1{
+    font-size: 63px;      /* Mobile "usluga" column title font size */
+}
 }
