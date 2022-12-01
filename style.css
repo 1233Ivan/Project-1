@@ -1,0 +1,118 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Bebas Neue', cursive;      /* Navigation button font*/
+    font-family: 'Montserrat', sans-serif;      /* Navigation button font*/
+}
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/background.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+nav{
+  display: flex;
+  padding: 2% 6%;      /* Logo padding*/
+  justify-content: space-between;
+  align-items: center;
+}
+nav img{
+    width: 150px;      /* Navigation block size*/
+}
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+.nav-links ul li{      /* Navigation menu*/
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+.nav-links ul li a{
+    color: #fff;      /* Navigation button color*/
+    text-decoration: none;
+    font-size: 16px;      /* Font size of navigation buttons*/
+}
+.nav-links ul li::after{
+    content: '';
+    width: 0%;      /* Hove animation % before hovering*/
+    height: 2px;      /* Navigation button animation size*/
+    background: #00c3ff;      /* Color for navigation button animation*/
+    display: block;
+    margin: auto;
+    transition: 0.5s;      /* Animation transition speed*/
+}
+.nav-links ul li:hover::after{
+    width: 100%;      /* Hover animation % after hovering*/
+}
+.text-box{
+    width: 90%;
+    color: #fff;      /* Middle text color*/
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.text-box h1{
+    font-size: 52px;
+}
+.text-box p{
+    margin: 10px 0 40px;
+    font-size: 18px;      /* Middle text paragraph text font size*/
+    color: #fff;      /* Middle text paragraph text color*/
+}
+.middle-btn{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;      /* Middle text button color*/
+    border: 2px solid #fff;      /* Middle text button border font and size*/
+    border-radius: 6px;      /* Middle button corner raidus size*/
+    padding: 12px 34px;
+    font-size: 13px;      /* Middle button text font size*/
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+.middle-btn:hover{
+    border: 1px solid #00c3ff;
+    background: #00c3ff;
+    transition: 1s;
+}
+
+
+nav .fa{
+    display: none;
+}
+
+@media(max-width: 700px){      /* @media rule is used in media queries to apply different styles for different media devices*/
+    .text-box h1{
+      font-size: 20px;
+  }
+  .nav-links ul li{
+      display: block;
+  }
+  .nav-links{
+      position: absolute;
+      background: #00c3ff;
+      height: 100vh;
+      width: 200px;
+      top: 0;
+      right: -200px;
+      text-align: left;
+      z-index: 2;
+  }
+  nav .f{
+      display: block;
+      color: #fff;
+      margin: 10px;
+      font-size: 22px;
+      cursor: pointer;
+  }
+  .nav-links ul{
+      padding: 30px;
+  }
+}
