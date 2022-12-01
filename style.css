@@ -9,7 +9,7 @@
     background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/background.jpg);
     background-position: center;
     background-size: cover;
-    position: fixed;
+    position: relative;
 }
 nav{
   display: flex;
@@ -111,7 +111,7 @@ nav .fa{
     width: 300px;      /* Mobile logo size */
   }
   .nav-links{
-      position: absolute;
+      position: fixed;
       background: #3b3b3b;      /* Mobile navigation menu color */
       opacity: 100%;      /* Mobile navigation menu opacity % */
       height: 100vh;
@@ -138,7 +138,7 @@ nav .fa{
     font-size: 56px;
     cursor: pointer;
     opacity: 80%;      /* Navigation menu icon opacity % */
-    padding-left: 15px;      /* Adds space(padding) to menu icon */
+    padding-left: 15px;
 }
   a{
     text-decoration:none;      /* Removes purple/blue underline on icons */
@@ -146,4 +146,49 @@ nav .fa{
   .nav-links ul{
       padding: 20px;
   }
+}
+
+/*-------------Sekcija Usluge-------------*/
+
+.usluge{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+h1{
+    font-size: 36px;
+    font-weight: 600;
+
+}
+p{
+    color: #777;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+
+}
+
+.row{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+.usluge-col{
+    flex-basis: 31%;
+    background: #dbd3d3;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transition: 0.5s;      /* Shadow transition for "usluge" boxes */
+}
+h3{
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+}
+.usluge-col:hover{
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.4);      /* Shadow behind "usluge" boxes*/
 }
