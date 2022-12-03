@@ -1,6 +1,5 @@
 <!DOCTYPE html>
-
-<html>
+<html lang="en">
 <head>
     <title>Project 1</title>      <!--Website name-->
     <meta charset="UTF-8">
@@ -20,11 +19,11 @@
             <div class="nav-links" id="navLinks">
               <i class="fa fa-times" onclick="hideMenu()"></i>      <!--Close icon-->
                 <ul>
-                    <li><a href="">NASLOVNICA</a></li>      <!--Navigation buttons names-->
-                    <li><a href="">GALERIJA</a></li>
-                    <li><a href="">USLUGE</a></li>
-                    <li><a href="">O NAMA</a></li>
-                    <li><a href="">KONTAKT</a></li>
+                    <li id="naslovnica"><a href="">NASLOVNICA</a></li>      <!--Navigation buttons names-->
+                    <li id="galerija"><a href="">GALERIJA</a></li>
+                    <li id="usluge"><a href="">USLUGE</a></li>
+                    <li id="onama"><a href="">O NAMA</a></li>
+                    <li id="kontakt"><a href="">KONTAKT</a></li>
                 </ul>
             </div>
             <i class="fa fa-bars" onclick="showMenu()"></i>      <!--Menu icon-->
@@ -37,43 +36,8 @@
 </div>
 
 
-
-    </section>
-
-<!--Sekcija "Usluge"-->
-
-<section class="usluge">
-    <h1>Vrste usluga koje nudimo</h1>
-    <p>Primjer za nadodati</p>
-
-    <div class="row">
-        <div class="usluge-col">
-            <h3>Primjer 1</h3>
-            <p>Opiši primjera</p>
-        </div>
-        <div class="usluge-col">
-            <h3>Primjer 2</h3>
-            <p>Opiši primjera</p>
-        </div>
-        <div class="usluge-col">
-            <h3>Primjer 3</h3>
-            <p>Opiši primjera</p>
-        </div>
-    </div>
-
-
-
-
-
-
-</section>
-
-
-
-
-
-
 <!--JavaScript for Toggle Menu-->
+
 <script>
 
     var navLinks = document.getElementById("navLinks");
