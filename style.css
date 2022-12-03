@@ -161,7 +161,7 @@ nav .fa{
     position: relative;
 }
 h1{
-    font-size: 65px;      /* Font size for "usluge" title */
+    font-size: 42px;      /* Font size for "usluge" title */
     font-weight: 600;
 
 }
@@ -174,7 +174,7 @@ h3{
 }
 .usluge p{
     color: rgb(0, 0, 0);      /* Color for "usluge" title paragraph */
-    font-size: 32px;      /* Font size for "usluge" title paragraph */
+    font-size: 22px;      /* Font size for "usluge" title paragraph */
     font-weight: 300;
     line-height: 22px;
     padding: 20px;
