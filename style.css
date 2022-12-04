@@ -8,7 +8,7 @@
 }
 
 #naslovnica{
-    display: none;
+    display: none;      /* Not displaying "naslovnica" button when viewer is on the same page */
 }
 
 .header{
@@ -53,7 +53,7 @@ nav img{
     content: '';
     width: 0%;      /* Animation % before hovering */
     height: 2px;      /* Navigation button animation size */
-    background: #00c3ff;      /* Color for navigation button animation */
+    background: #ff0015;      /* Color for navigation button animation */
     display: block;
     margin: auto;
     transition: 0.5s;      /* Animation transition speed */
@@ -97,8 +97,8 @@ nav img{
 }
 
 .middle-btn:hover{
-    border: 1px solid #00c3ff;
-    background: #00c3ff;
+    border: 1px solid #ff0015;      /* Middle button hover animation border color */
+    background: #ff0015;      /* Middle button hover animation background fill color */
     transition: 1s;
 }
 
@@ -108,18 +108,18 @@ nav .fa{
 
 /* @media rule is used in media queries to apply different styles for different media devices */
 
-@media(max-width: 1500px){     
+@media (max-width: 1500px){     
 
     #naslovnica{
-        display: block;
+        display: none;      /* Not displaying "naslovnica" button when viewer is on the same page for mobile*/
     }
 
     .text-box h1{
-      font-size: 75px;      /* Middle text size for mobile */
+      font-size: 80px;      /* Middle text size for mobile */
     }
 
     .text-box p{
-        font-size: 30px;      /* Middle paragraph text size for mobile */
+        font-size: 35px;      /* Middle paragraph text size for mobile */
     }
 
   .nav-links ul li{
@@ -133,7 +133,7 @@ nav .fa{
   }
 
   .middle-btn{
-    font-size: 25px;      /* Mobile middle button size */
+    font-size: 35px;      /* Mobile middle button size */
   }
 
   nav img{
@@ -216,6 +216,7 @@ ul{
     width: 25%;
     padding: 10px 15px;
 }
+
 .footer-col h4{
     font-size: 18px;      /* Footer h4 column title font size */
     color: #ffffff;      /* Footer h4 column title color */
@@ -224,19 +225,26 @@ ul{
     font-weight: 500;
     position: relative;
 }
+
 .footer-col h4::before{
     content: '';
     position: absolute;
     left: 0;
     bottom: -5px;
-    background-color: #00c3ff;      /* Footer h4 column underline color */
+    background-color: #ff0015;      /* Footer h4 column underline color */
     height: 2px;
     box-sizing: border-box;
-    width: 100px;      /* Footer h4 column underline width */
+    width: 125px;      /* Footer h4 column underline width */
 }
+
+.footer-col p{
+    color: #ffffff;
+}
+
 .foot-col ul li:not(:last-child){
     margin-bottom: 10px;
 }
+
 .footer-col ul li a{
     font-size: 16px;      /* Footer listing font size */
     text-transform: capitalize;
@@ -246,29 +254,91 @@ ul{
     display: block;
     transition: all 0.3s ease;
 }
+
 .footer-col ul li a:hover{
     color: #ffffff;
     padding-left: 8px;
 }
+
 .footer-col .social-links a{
     display: inline-block;
-    height: 40px;
-    width: 40px;
+    height: 40px;      /* Footer social links icon border height */
+    width: 40px;      /* Footer social links icon border width */
     background-color: rgba(255,255,255,0.2);
     margin-right:0px 10px 10px 0px;
     text-align: center;
     line-height: 40px;
     border-radius: 50%;
-    color: #ffffff;
+    color: #ffffff;      /* Footer social links icon background color */
     transition: all 0.5s ease;
 }
+
 .footer-col .social-links a:hover{
-    color: #24262b;
-    background-color: #ffffff;
+    background-color: #ffffff;      /* Footer social links animation background color */
 }
-.footer-logo{
-    padding: 100px 2px;
+
+.footer-col ul li{
+    color: #ffffff;      /* Footer column company info title font color */
 }
-.footer-col p{
-    color: #ffffff;
+
+.footer-col ul li p{
+    color: #bbbbbb;      /* Footer column company info list font color */
+}
+
+/* @media rule is used in media queries to apply different styles for different media devices */
+
+@media screen and (max-width: 1500px){
+    .footer{
+        width: 100%;
+    }
+
+    .row{
+        flex-direction: column;
+    }
+
+    .footer-col{
+        font-size: 50px;      /* Mobile footer column company info font size */
+        text-align: left;
+    }
+    
+    .footer-col h4{
+        font-size: 60px;      /* Mobile footer column title font size */
+        padding-top: 60px;
+    }
+
+    .footer-col ul li a{
+        font-size: 50px;      /* Mobile footer column links font size */
+    }
+
+    .footer-col .social-links a{
+        display: inline-block;
+        height: 100px;
+        width: 100px;
+        background-color: rgba(255,255,255,0.2);      /* Mobile footer social links border background color */
+        margin-right:0px 10px 10px 0px;
+        line-height: 100px;
+        text-align: center;
+        border-radius: 50%;
+        color: #ffffff;      /* Mobile footer social links icon color */
+        transition: all 0.5s ease;
+    }
+
+    .footer-col h4::before{
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: -5px;
+        background-color: #ff0015;      /* Mobile footer h4 column underline color */
+        height: 4px;      /* Mobile footer h4 column underline height (tickness) */
+        box-sizing: border-box;
+        width: 400px;      /* Mobile footer h4 column underline width */
+    }
+
+    .footer-col ul li{
+        color: #ffffff;      /* Mobile footer column company info title font color */
+    }
+
+    .footer-col ul li p{
+        color: #bbbbbb;      /* Mobile footer column company info list font color */
+    }
 }
