@@ -119,15 +119,6 @@ nav .fa{
         display: none;      /* Not displaying "naslovnica" button when viewer is on the same page for mobile*/
     }
 
-    .header{
-        min-height: 100vh;
-        width: 100%;
-        background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(30, 4, 4, 0.7)),url('./images/background_1.jpg');      /* Background gradient for background picture*/
-        background-position: center;
-        background-size: cover;
-        position: relative;
-    }
-
     .text-box h1{
       font-size: 80px;      /* Middle text size for mobile */
     }
