@@ -48,7 +48,7 @@ nav img{
     text-decoration: none;
     font-size: 18px;      /* Font size of navigation buttons */
     font-weight: 500;
-    filter: contrast(75%)
+    filter: contrast(70%)
 }
 
 .nav-links ul li::after{
