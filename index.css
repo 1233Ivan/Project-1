@@ -78,13 +78,13 @@ nav img{
 }
 
 .text-box h1{
-    font-size: 52px;      /* Middle title text font size*/
+    font-size: 52px;
 }
 
 .text-box p{
     margin: 10px 0 40px;
-    font-size: 18px;      /* Middle title paragraph text font size */
-    color: #ffffff;      /* Middle title paragraph text color */
+    font-size: 18px;      /* Middle text paragraph text font size */
+    color: #ffffff;      /* Middle text paragraph text color */
 }
 
 .middle-btn{

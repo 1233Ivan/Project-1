@@ -68,14 +68,15 @@ nav img{
 }
 
 .text-box{
-    width: 90%;
+    width: 100%;
     color: #ff0015;      /* Middle text color */
     position: absolute;
-    top: 50%;
+    top: 35%;
     left: 50%;
     transform: translate(-50%,-50%);
     text-align: center;
     filter: contrast(75%);
+    max-height: 350px;
 }
 
 .text-box h1{
@@ -83,30 +84,9 @@ nav img{
 }
 
 .text-box p{
-    margin: 10px 0 40px;
-    font-size: 18px;      /* Middle title paragraph font size */
+    margin: 40px 80px 40px;
+    font-size: 16px;      /* Middle title paragraph font size */
     color: #ffffff;      /* Middle title paragraph text color */
-}
-
-.middle-btn{
-    display: inline-block;
-    text-decoration: none;
-    color: #ffffff;      /* Middle text button color*/
-    border: 2px solid #fff;      /* Middle text button border font and size */
-    border-radius: 6px;      /* Middle button corner raidus size */
-    padding: 12px 34px;
-    font-size: 13px;      /* Middle button text font size */
-    background: transparent;
-    position: relative;
-    cursor: pointer;
-    
-}
-
-.middle-btn:hover{
-    border: 1px solid #ff0015;      /* Middle button hover animation border color */
-    background: #ff0015;      /* Middle button hover animation background fill color */
-    transition: 0.5s;
-    filter: contrast(90%)
 }
 
 nav .fa{
@@ -115,21 +95,32 @@ nav .fa{
 
 /* @media rule is used in media queries to apply different styles for different media devices */
 
-@media (max-width: 1500px){     
+@media (max-width: 1000px){   
 
-    #naslovnica{
+    #onama{
         display: none;      /* Not displaying "naslovnica" button when viewer is on the same page for mobile*/
     }
 
+    .text-box{
+        overflow-y: scroll;
+        border: 2px solid rgba(31, 31, 31, 0.842);
+        border-radius: 10px;
+        max-height: 70vh;
+        margin-top: 10px;
+    }
+    .text-box{
+        top: 50%;
+    }
+
     .text-box h1{
-      font-size: 85px;      /* Middle text size for mobile */
+      font-size: 120px;      /* Middle text size for mobile */
     }
 
     .text-box p{
         font-size: 35px;      /* Middle paragraph text size for mobile */
     }
 
-  .nav-links ul li{
+  .nav-links2 ul li{
       display: block;
   }
 
@@ -150,17 +141,9 @@ nav .fa{
     filter: contrast(75%)
 }
 
-.nav-links ul li:hover::after{
+    .nav-links ul li:hover::after{
     width: 100%;      /* Mobile hover animation % after hovering */
 }
-
-  .middle-btn{
-    font-size: 35px;      /* Mobile middle button size */
-  }
-
-  nav img{
-    width: 300px;      /* Mobile logo size */
-  }
 
   .nav-links{
       position: fixed;
@@ -233,7 +216,7 @@ ul{
     background-color: #181818;      /* Footer background color */
     margin: auto;
     position: relative;
-    width: 100;
+    width: 100%;
 }
 
 .footer-col{
@@ -313,23 +296,21 @@ ul{
 
 /* @media rule is used in media queries to apply different styles for different media devices */
 
-@media screen and (max-width: 1500px){
-    .footer{
-        width: 100%;
-    }
-
+@media screen and (max-width: 1000px){
+    
     .row{
         flex-direction: column;
     }
 
     .footer-col{
+        width: 50%;
         font-size: 50px;      /* Mobile footer column company info font size */
         text-align: left;
     }
     
     .footer-col h4{
         font-size: 60px;      /* Mobile footer column title font size */
-        padding-top: 60px;
+        padding-top: 40px;
     }
 
     .footer-col ul li a{
@@ -351,8 +332,8 @@ ul{
 
     .footer-col h4::before{
         content: '';
-        position: absolute;
-        left: 0;
+        position: fixed;
+        left: 0px;
         bottom: -5px;
         background-color: #ff0015;      /* Mobile footer h4 column underline color */
         height: 4px;      /* Mobile footer h4 column underline height (tickness) */
