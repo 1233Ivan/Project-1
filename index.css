@@ -74,17 +74,17 @@ nav img{
     left: 50%;
     transform: translate(-50%,-50%);
     text-align: center;
-    filter: contrast(75%)
+    filter: contrast(75%);
 }
 
 .text-box h1{
-    font-size: 52px;
+    font-size: 52px;      /* Middle title text font size*/
 }
 
 .text-box p{
     margin: 10px 0 40px;
-    font-size: 18px;      /* Middle text paragraph text font size */
-    color: #ffffff;      /* Middle text paragraph text color */
+    font-size: 18px;      /* Middle title paragraph text font size */
+    color: #ffffff;      /* Middle title paragraph text color */
 }
 
 .middle-btn{
@@ -98,6 +98,7 @@ nav img{
     background: transparent;
     position: relative;
     cursor: pointer;
+    
 }
 
 .middle-btn:hover{
