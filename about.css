@@ -29,7 +29,7 @@ nav{
 }
 
 nav img{
-    width: 150px;      /* Navigation block size */
+    width: 150px;      /* Logo size */
 }
 
 .nav-links{
@@ -103,7 +103,7 @@ nav .fa{
 
     .text-box{
         overflow-y: scroll;
-        border: 2px solid rgba(31, 31, 31, 0.842);
+        border: 2px solid rgba(31, 31, 31, 0.534);
         border-radius: 10px;
         max-height: 70vh;
         margin-top: 10px;
@@ -144,6 +144,10 @@ nav .fa{
     .nav-links ul li:hover::after{
     width: 100%;      /* Mobile hover animation % after hovering */
 }
+
+    nav img{
+        width: 300px;      /* Mobile logo size */
+  }
 
   .nav-links{
       position: fixed;

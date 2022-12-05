@@ -28,7 +28,7 @@ nav{
 }
 
 nav img{
-    width: 150px;      /* Navigation block size */
+    width: 150px;      /* Logo size */
 }
 
 .nav-links{
@@ -313,6 +313,7 @@ ul{
 /* @media rule is used in media queries to apply different styles for different media devices */
 
 @media screen and (max-width: 1500px){
+    
     .footer{
         width: 100%;
     }
