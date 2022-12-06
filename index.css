@@ -114,10 +114,16 @@ nav .fa{
 
 /* @media rule is used in media queries to apply different styles for different media devices */
 
-@media (max-width: 1500px){     
+@media (max-width: 1000px){     
 
     #naslovnica{
         display: none;      /* Not displaying "naslovnica" button when viewer is on the same page for mobile*/
+    }
+
+    .text-box{
+        padding: 100px 0 100px 0;
+        margin: 100px 0 100px 0;
+        top: 45%;
     }
 
     .text-box h1{
@@ -149,8 +155,8 @@ nav .fa{
     filter: contrast(75%)
 }
 
-.nav-links ul li:hover::after{
-    width: 100%;      /* Mobile hover animation % after hovering */
+    .nav-links ul li:hover::after{
+        width: 100%;      /* Mobile hover animation % after hovering */
 }
 
   .middle-btn{
