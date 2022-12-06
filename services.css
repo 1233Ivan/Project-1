@@ -7,18 +7,19 @@
 
 }
 
-#onama{
-    display: none;      /* Not displaying "o nama" button when viewer is on the same page */
+#usluge{
+    display: none;      /* Not displaying "usluge" button when viewer is on the same page */
 }
 
 .header{
-    min-height: 100vh;
+    min-height: 150vh;
     width: 100%;
     background-color: #181818;
     background-image: linear-gradient(rgb(0, 0, 0),rgba(0, 0, 0, 0.7));      /* Background gradient for background picture*/
     background-position: center;
     background-size: cover;
     position: relative;
+    margin: auto;
 }
 
 nav{
@@ -79,6 +80,24 @@ nav img{
     max-height: 350px;
 }
 
+.text-box h2{
+    flex-basis: 31%;
+    background: #00000021;
+    margin-bottom: 5;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    color: #ffffff;
+}
+
+.text-box h4{
+    flex-basis: 31%;
+    background: #00000021;
+    margin-bottom: 5;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    color: #ffffff;
+}
+
 .text-box h1{
     font-size: 52px;      /* Middle title text font size */
 }
@@ -95,10 +114,14 @@ nav .fa{
 
 /* @media rule is used in media queries to apply different styles for different media devices */
 
-@media (max-width: 1000px),(max-height: 760px){   
+@media (max-width: 1000px),(max-height: 700px){   
 
-    #onama{
-        display: none;      /* Not displaying "o nama" button when viewer is on the same page for mobile*/
+    #usluge{
+        display: none;      /* Not displaying "usluge" button when viewer is on the same page for mobile*/
+    }
+
+    .header{
+        min-height: 125vh;
     }
 
     .text-box{
@@ -109,6 +132,7 @@ nav .fa{
         max-width: 100vw;
         margin-top: 100px;
         top: 50%;
+
     }
 
     .text-box h1{
