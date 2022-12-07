@@ -7,12 +7,11 @@
 
 }
 
-#usluge{
-    display: none;      /* Not displaying "usluge" button when viewer is on the same page */
-}
+/* #usluge{
+    display: none;}      /* Not displaying "usluge" button when viewer is on the same page */
 
 .header{
-    min-height: 150vh;
+    min-height: 125vh;
     width: 100%;
     background-color: #181818;
     background-image: linear-gradient(rgb(0, 0, 0),rgba(0, 0, 0, 0.7));      /* Background gradient for background picture*/
@@ -96,10 +95,17 @@ nav img{
     padding: 20px 12px;
     box-sizing: border-box;
     color: #ffffff;
+    font-size: 14px;
+    text-decoration: underline;
+    text-underline-offset: 5px;
 }
 
 .text-box h1{
-    font-size: 52px;      /* Middle title text font size */
+    font-size: 32px;      /* Middle title text font size */
+}
+
+.text-box h2{
+    font-size: 17px;
 }
 
 .text-box p{
@@ -112,13 +118,23 @@ nav .fa{
     display: none;
 }
 
+.text-box .fa-wrench{
+    font-size: 32px;
+    margin-top: 10px;
+}
+
+.text-box .usluge{
+    text-decoration: underline;
+    text-underline-offset: 10px;
+    font-size: 40px;
+}
+
 /* @media rule is used in media queries to apply different styles for different media devices */
 
 @media (max-width: 1000px),(max-height: 700px){   
 
-    #usluge{
-        display: none;      /* Not displaying "usluge" button when viewer is on the same page for mobile*/
-    }
+    /* #usluge{
+        display: none;}      /* Not displaying "usluge" button when viewer is on the same page for mobile*/
 
     .header{
         min-height: 125vh;
@@ -136,7 +152,12 @@ nav .fa{
     }
 
     .text-box h1{
-      font-size: 80px;      /* Middle text size for mobile */
+      font-size: 52px;      /* Middle text size for mobile */
+    }
+
+    .text-box h4{
+        font-size: 14px;
+        padding: 0px 40px 0px;
     }
 
     .text-box p{
@@ -214,6 +235,11 @@ nav .fa{
     
   .nav-links ul{
       padding: 20px;
+  }
+
+  .text-box .fa-wrench{
+    font-size: 52px;
+    margin-top: 50px;
   }
 }
 
