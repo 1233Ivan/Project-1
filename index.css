@@ -7,9 +7,8 @@
 
 }
 
-#naslovnica{
-    display: none;      /* Not displaying "naslovnica" button when viewer is on the same page */
-}
+/* #naslovnica{
+    display: none;}      /* Not displaying "naslovnica" button when viewer is on the same page */
 
 .header{
     min-height: 100vh;
@@ -116,9 +115,8 @@ nav .fa{
 
 @media (max-width: 1000px){     
 
-    #naslovnica{
-        display: none;      /* Not displaying "naslovnica" button when viewer is on the same page for mobile*/
-    }
+    /* #naslovnica{
+        display: none;}      /* Not displaying "naslovnica" button when viewer is on the same page for mobile*/
 
     .text-box{
         padding: 100px 0 100px 0;
@@ -318,7 +316,7 @@ ul{
 
 /* @media rule is used in media queries to apply different styles for different media devices */
 
-@media screen and (max-width: 1500px){
+@media screen and (max-width: 1000px){
     
     .footer{
         width: 100%;
