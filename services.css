@@ -251,6 +251,12 @@ footer *{
     box-sizing: border-box;
 }
 
+.copyright{
+    color: #ffffff;
+    font-size: 12px;
+    margin-left: 10px;
+}
+
 .container{
     max-width: 1170px;
     margin: auto;
@@ -352,6 +358,13 @@ ul{
 /* @media rule is used in media queries to apply different styles for different media devices */
 
 @media screen and (max-width: 1000px){
+
+    .copyright{
+        font-size: 25px;
+        margin-right: 10px;
+        text-align: right;
+        padding-bottom: 5px;
+    }
     
     .row{
         flex-direction: column;
