@@ -4,19 +4,72 @@
     box-sizing: border-box;
     font-family: 'Rubik', sans-serif;
     line-height: 1.5;
-
 }
 
 /* #naslovnica{
     display: none;}      /* Not displaying "naslovnica" button when viewer is on the same page */
 
 .header{
-    min-height: 100vh;
+    height: 100vh;
     width: 100%;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(30, 4, 4, 0.7)),url('./images/background_1.jpg');      /* Background gradient for background picture*/
+    background-image: url('./images/image.jpg');
     background-position: center;
     background-size: cover;
+    background-repeat: no-repeat;
+    background-color: transparent;
     position: relative;
+    overflow: hidden;
+    animation: change 66s infinite ease-in-out;
+}
+
+/* Changing "naslovnica" backgrounds */
+
+@keyframes change{
+    0%
+    {
+        background-image: url(images/background_1.jpg);
+    }
+    10%
+    {
+        background-image: url(images/background_2.jpg);
+    }
+    20%
+    {
+        background-image: url(images/background_3.jpg);
+    }
+    30%
+    {
+        background-image: url(images/background_4.jpg);
+    }
+    40%
+    {
+        background-image: url(images/background_5.jpg);
+    }
+    50%
+    {
+        background-image: url(images/background_6.jpg);
+    }
+    60%
+    {
+        background-image: url(images/background_7.jpg);
+    }
+    70%
+    {
+        background-image: url(images/background_8.jpg);
+    }
+    80%
+    {
+        background-image: url(images/background_9.jpg);
+    }
+    90%
+    {
+        background-image: url(images/background_10.jpg);
+    }
+    100%
+    {
+        background-image: url(images/background_11.jpg);
+    }
+
 }
 
 nav{
@@ -219,6 +272,12 @@ footer *{
     box-sizing: border-box;
 }
 
+.copyright{
+    color: #ffffff;
+    font-size: 12px;
+    margin-left: 10px;
+}
+
 .container{
     max-width: 1170px;
     margin: auto;
@@ -286,6 +345,7 @@ ul{
 
 .footer-col ul li a:hover{
     color: #ff0015;
+    filter: contrast(85%);
     padding-left: 8px;
 }
 
@@ -305,6 +365,7 @@ ul{
 
 .footer-col .social-links a:hover{
     background-color: #ff0015;      /* Footer social links animation background color */
+    filter: contrast(70%);
 }
 
 .footer-col ul li{
@@ -319,8 +380,11 @@ ul{
 
 @media screen and (max-width: 1000px){
     
-    .footer{
-        width: 100%;
+    .copyright{
+        font-size: 25px;
+        margin-right: 10px;
+        text-align: right;
+        padding-bottom: 5px;
     }
 
     .row{
