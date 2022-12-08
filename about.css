@@ -70,7 +70,7 @@ nav img{
     width: 100%;
     color: #ff0015;      /* Middle text color */
     position: absolute;
-    top: 40%;
+    top: 35%;
     left: 50%;
     transform: translate(-50%,-50%);
     text-align: center;
@@ -82,7 +82,6 @@ nav img{
     font-size: 42px;      /* Middle title text font size */
     text-align: center;
     padding-bottom: -50px;
-    text-decoration: underline;
     text-underline-offset: 10px;
 
 }
@@ -94,6 +93,17 @@ nav img{
     text-align: center;
     word-break: normal;
     display: block;
+}
+
+.text-box .fa-comment{
+    font-size: 32px;
+    margin-top: 10px;
+}
+
+.text-box .onama{
+    text-decoration: underline;
+    text-underline-offset: 10px;
+    font-size: 40px;
 }
 
 nav .fa{
@@ -118,11 +128,11 @@ nav .fa{
     }
 
     .text-box h1{
-      font-size: 80px;      /* Middle text size for mobile */
+      font-size: 52px;      /* Middle text size for mobile */
     }
 
     .text-box p{
-        font-size: 35px;      /* Middle paragraph text size for mobile */
+        font-size: 15px;      /* Middle paragraph text size for mobile */
         text-align: center;
         margin: 20px 80px 20px;
         word-break: normal;
@@ -200,6 +210,12 @@ nav .fa{
   .nav-links ul{
       padding: 20px;
   }
+
+  .text-box .fa-comment{
+    font-size: 52px;
+    margin-top: 50px;
+  }
+
 }
 
 /* ------------Footer Section------------ */
