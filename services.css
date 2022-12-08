@@ -318,6 +318,7 @@ ul{
 
 .footer-col ul li a:hover{
     color: #ff0015;
+    filter: contrast(85%);
     padding-left: 8px;
 }
 
@@ -337,6 +338,7 @@ ul{
 
 .footer-col .social-links a:hover{
     background-color: #ff0015;      /* Footer social links animation background color */
+    filter: contrast(70%);
 }
 
 .footer-col ul li{
