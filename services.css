@@ -148,7 +148,6 @@ nav .fa{
         max-width: 100vw;
         margin-top: 100px;
         top: 50%;
-
     }
 
     .text-box h1{
@@ -160,8 +159,8 @@ nav .fa{
         padding: 0px 40px 0px;
     }
 
-    .text-box p{
-        font-size: 35px;      /* Middle paragraph text size for mobile */
+    .text-box h2{
+        font-size: 15px;
     }
 
   .nav-links2 ul li{
@@ -241,6 +240,7 @@ nav .fa{
     font-size: 52px;
     margin-top: 50px;
   }
+
 }
 
 /* ------------Footer Section------------ */

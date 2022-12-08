@@ -208,6 +208,7 @@ nav .fa{
   .nav-links ul{
       padding: 20px;
   }
+
 }
 
 /* ------------Footer Section------------ */
@@ -371,4 +372,5 @@ ul{
     .footer-col ul li p{
         color: #bbbbbb;      /* Mobile footer column company info list font color */
     }
+    
 }

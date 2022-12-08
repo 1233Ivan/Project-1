@@ -119,7 +119,7 @@ nav .fa{
     display: none;
 }
 
-.text-box .fa-users{
+.text-box .fa-phone{
     font-size: 32px;
     margin-top: 10px;
 }
@@ -153,11 +153,11 @@ nav .fa{
     }
 
     .text-box h1{
-      font-size: 80px;      /* Middle text size for mobile */
+      font-size: 52px;      /* Middle text size for mobile */
     }
 
-    .text-box p{
-        font-size: 35px;      /* Middle paragraph text size for mobile */
+    .text-box h2{
+        font-size: 15px;
     }
 
   .nav-links2 ul li{
@@ -233,10 +233,11 @@ nav .fa{
       padding: 20px;
   }
 
-  .text-box .fa-users{
+  .text-box .fa-phone{
     font-size: 52px;
     margin-top: 50px;
   }
+
 }
 
 /* ------------Footer Section------------ */
