@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html xml:lang="hr" lang="hr">
 <head>
-    <title>Kontakt&nbsp|&nbspFirstCutLaser</title>      <!--Website name-->
+    <title>Naslovnica&nbsp|&nbspFirstCutLaser d.o.o.</title>      <!--Website name-->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" conetent="width=device-width", initial-scale="1.0">
     <!--Favicon-->
-    <link rel="icon" type="image/x-icon" href="images/favicon.png">
+    <link rel="icon" type="image/x-icon" href="/images/favicon.png">
     <!--Stylesheets-->
-    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" type="text/css" href="/css/index.css">
     <!--Google Fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,48 +17,26 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"> <!--Icons will display as empty block if the links is old-->
 </head>
 <body>
-<section class="header">
+    <section class="header">
         <nav>
-            <a href="index.html"><img src="images/logo.png"></a>      <!--Logo image-->
+            <a href="index.html"><img src="/images/logo.png"></a>      <!--Logo image-->
             <div class="nav-links" id="navLinks">
               <i class="fa fa-times" onclick="hideMenu()"></i>      <!--Close icon-->
                 <ul>
-                    <li id="naslovnica"><a href="index.html">NASLOVNICA</a></li>
-                    <li id="galerija"><a href="">GALERIJA</a></li>
-                    <li id="usluge"><a href="services.html">USLUGE</a></li>      <!--Navigation buttons names-->
-                    <li id="onama"><a href="about.html">O&nbspNAMA</a></li>
-                    <li id="kontakt"><a href="contact.html">KONTAKT</a></li>
+                    <li id="naslovnica"><a href="/html/index.html">NASLOVNICA</a></li>
+                    <li id="galerija"><a href="/html/gallery.html">GALERIJA</a></li>
+                    <li id="usluge"><a href="/html/services.html">USLUGE</a></li>      <!--Navigation buttons names-->
+                    <li id="onama"><a href="/html/about.html">O&nbspNAMA</a></li>
+                    <li id="kontakt"><a href="/html/contact.html">KONTAKT</a></li>
                 </ul>
             </div>
             <i class="fa fa-bars" onclick="showMenu()"></i>      <!--Menu icon-->
         </nav>
-    </section>
-        <div class="text-box">
-                <i class="fa fa-phone"></i>
-                <h1 class="kontakt">KONTAKT</h1>
-                <br>
-                <h1>PODACI&nbspTVRTKE</h1>
-                <h2>FirstCutLaser&nbspd.o.o.</h2>
-                <h2>Adresa:&nbsp&nbspDrenovec&nbsp34</h2>
-                <h2>Sjedište:&nbsp&nbspŠkarnik&nbsp1/1</h2>
-                <h2>Grad:&nbsp&nbspVaraždinske&nbspToplice</h2>
-                <h2>Poštanski&nbspBroj:&nbsp&nbsp42223</h2>
-                <!--<h4><i><strong>Tvrtka je registrirana na Trgovačkom sudu u Varaždinu.</strong></i></h4> -->
-                <h1>KONTAKT INFORMACIJE</h1>      <!--Middle header text-->
-                <h2>EMAIL:&nbsp&nbspfirstcutlaser1@gmail.com</h2>
-                <strong>Luka</strong>
-                <h2>Mob&nbsp.1:&nbsp&nbsp+385&nbsp(0)&nbsp98&nbsp966&nbsp3024</h2>
-                <strong>Anđelko</strong>
-                <h2>Mob&nbsp.2:&nbsp&nbsp+385&nbsp(0)&nbsp99&nbsp671&nbsp5216</h2>
-                <h1>UPLATNE INFORMACIJE</h1>      <!--Middle header text-->
-                <h4>ZAGREBAČKA&nbsp&nbspBANKA&nbsp&nbspd.d.&nbsp&nbspVARAŽDIN</h4>
-                <h2>IBAN:&nbsp&nbsp</h2>
-                <h2>SWIFT:&nbsp&nbspZABAHR2X</h2>
-                <h2>OIB:&nbsp&nbsp</h2>
-
-        </div>
-    </section>
-
+<div class="text-box">
+    <h1>LASERSKO REZANJE</h1>      <!--Middle header text-->
+    <p>Najbrže i najpreciznije rezanje materijala.</p>      <!--Middle paragraph text-->
+    <a href="contact.html" class="middle-btn">KONTAKTIRAJ&nbspNAS</a>      <!--Middle button text--> 
+</div>
 </section>
 
 <section class="footer">
@@ -96,11 +74,11 @@
                 <div class="footer-col">
                     <h4>NAVIGACIJA</h4>      <!--Sitemap title--> 
                     <ul>
-                        <li><a href="index.html">NASLOVNICA</a></li>
-                        <li><a href="#">GALERIJA</a></li>
-                        <li><a href="services.html">USLUGE</a></li>
-                        <li><a href="about.html">O&nbspNAMA</a></li>
-                        <li><a href="#top">KONTAKT</a></li>
+                        <li><a href="#top">NASLOVNICA</a></li>
+                        <li><a href="/html/gallery.html">GALERIJA</a></li>
+                        <li><a href="/html/services.html">USLUGE</a></li>
+                        <li><a href="/html/about.html">O&nbspNAMA</a></li>
+                        <li><a href="/html/contact.html">KONTAKT</a></li>
                     </ul>
                     </div>
             </div>
@@ -112,7 +90,7 @@
 <!--JavaScript for Toggle Menu-->
 
 <script>
-
+   
     var navLinks = document.getElementById("navLinks");
 
     function showMenu(){
