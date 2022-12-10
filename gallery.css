@@ -142,7 +142,6 @@ nav .fa{
         padding-top: 250px;
         margin-bottom: 100px;
         padding-bottom: 250px;
-        pointer-events: none !important;
     }
 
     .image-map .fa-camera{
