@@ -23,13 +23,13 @@
 
 nav{
   display: flex;
-  padding: 2% 6%;      /* Logo padding */
+  padding: 2% 6%;      /* Nav padding */
   justify-content: space-between;
   align-items: center;
 }
 
 nav img{
-    width: 150px;      /* Logo size */
+    width: 200px;      /* Logo size */
 }
 
 .nav-links{
@@ -190,6 +190,7 @@ nav .fa{
 
     nav img{
         width: 300px;      /* Mobile logo size */
+        padding-top: 30px;
   }
 
   .nav-links{
