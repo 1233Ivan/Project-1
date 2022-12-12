@@ -12,7 +12,7 @@
 .header{
     height: 100vh;
     width: 100%;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.603),rgba(30, 4, 4, 0.363)),url('images/background_1.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.603),rgba(0, 0, 0, 0.363)),url('images/background_3.jpg');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -112,12 +112,25 @@ nav .fa{
     display: none;
 }
 
+#to-top{
+    display: none;
+}
+
 /* @media rule is used in media queries to apply different styles for different media devices */
 
 @media (max-width: 1000px){     
 
+    #to-top{
+        display: contents;
+    }
+
     /* #naslovnica{
         display: none;}      /* Not displaying "naslovnica" button when viewer is on the same page for mobile*/
+
+    .header{
+        background-image: linear-gradient(rgba(0, 0, 0, 0.603),rgba(0, 0, 0, 0.363)),url('images/background_5.jpg');
+        background-repeat: no-repeat;
+    }
 
     .text-box{
         padding: 100px 0 100px 0;
@@ -169,7 +182,7 @@ nav .fa{
 
   .nav-links{
       position: fixed;
-      background: #3b3b3b;      /* Mobile navigation menu color */
+      background-image: linear-gradient(rgb(7, 7, 7),rgba(7, 7, 7, 0.36));      /* Mobile navigation menu color */
       opacity: 100%;      /* Mobile navigation menu opacity % */
       height: 100vh;
       width: 400px;      /* Mobile navigation menu width */
