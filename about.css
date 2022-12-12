@@ -13,10 +13,10 @@
 .header{
     min-height: 100vh;
     width: 100%;
-    background-color: #181818;
-    background-image: linear-gradient(rgb(0, 0, 0),rgba(0, 0, 0, 0.7));      /* Background gradient for background picture*/
+    background-image: linear-gradient(rgba(0, 0, 0, 0.603),rgba(0, 0, 0, 0.363)),url('images/background_4.jpg');      /* Background gradient for background picture*/
     background-position: center;
     background-size: cover;
+    background-repeat: no-repeat;
     position: relative;
 }
 
@@ -110,12 +110,25 @@ nav .fa{
     display: none;
 }
 
+#to-top{
+    display: none;
+}
+
 /* @media rule is used in media queries to apply different styles for different media devices */
 
 @media (max-width: 1000px),(max-height: 760px){
+
+    #to-top{
+        display: contents;
+    }
     
     /* #onama{
         display: none;}      /* Not displaying "o nama" button when viewer is on the same page for mobile*/
+
+    .header{
+        background-image: linear-gradient(rgba(0, 0, 0, 0.603),rgba(0, 0, 0, 0.363)),url('images/background_5.jpg');
+        background-repeat: no-repeat;
+    }
     
     .text-box{
         overflow-y: scroll;
@@ -170,7 +183,7 @@ nav .fa{
 
   .nav-links{
       position: fixed;
-      background: #3b3b3b;      /* Mobile navigation menu color */
+      background-image: linear-gradient(rgb(7, 7, 7),rgba(7, 7, 7, 0.36));      /* Mobile navigation menu color */
       opacity: 100%;      /* Mobile navigation menu opacity % */
       height: 100vh;
       width: 400px;      /* Mobile navigation menu width */
