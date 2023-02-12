@@ -11,7 +11,7 @@
     display: none;}      /* Not displaying "o nama" button when viewer is on the same page */
 
 .header{
-    min-height: 100vh;
+    min-height: 120vh;
     width: 100%;
     background-image: linear-gradient(rgba(0, 0, 0, 0.603),rgba(0, 0, 0, 0.363)),url('images/background_4.jpg');      /* Background gradient for background picture*/
     background-position: center;
