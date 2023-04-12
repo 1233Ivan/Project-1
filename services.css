@@ -11,7 +11,7 @@
     display: none;}      /* Not displaying "usluge" button when viewer is on the same page */
 
 .header{
-    min-height: 125vh;
+    min-height: 135vh;
     width: 100%;
     background-image: linear-gradient(rgba(0, 0, 0, 0.603),rgba(0, 0, 0, 0.363)),url('images/background_4.jpg');      /* Background gradient for background picture*/
     background-position: center;
@@ -157,7 +157,7 @@ nav .fa{
         max-height: 90vh;
         max-width: 100vw;
         margin-top: 100px;
-        top: 50%;
+        top: 55%;
     }
 
     .text-box h1{
