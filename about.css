@@ -106,9 +106,9 @@ nav img{
     font-size: 40px;
 }
 
-.text-box ul{
-    scale: 100%;
-}
+/*.text-box ul{ Picture rescale size for Partner option.
+    scale: 100%; 
+}*/
 
 nav .fa{
     display: none;
