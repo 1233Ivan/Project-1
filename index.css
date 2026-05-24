@@ -20,6 +20,18 @@
    
 }
 
+.hamag{
+    scale: 80%;
+    margin: auto;
+    display: inline;
+    text-align: center;
+
+}
+
+.hamag-container{
+    background-color: #181818;
+}
+
 nav{
   display: flex;
   padding: 2% 6%;      /* Nav padding */
